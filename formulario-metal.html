@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Familia</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #121212;
+            color: #e0e0e0;
+        }
+
+        header {
+            background-color: #000;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 3px solid #ff4500;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 3em;
+            color: #ff4500;
+            text-shadow: 2px 2px 4px #000;
+        }
+
+        nav {
+            background-color: #222;
+            padding: 10px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav li {
+            margin: 0 15px;
+        }
+
+        nav a {
+            color: #ff4500;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+
+        nav a:hover {
+            color: #fff;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+
+        .hero {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .hero h2 {
+            font-size: 2.5em;
+            color: #fff;
+            text-shadow: 2px 2px 4px #000;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+
+        .gallery-item {
+            background-color: #222;
+            border-radius: 5px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s;
+        }
+
+        .gallery-item:hover {
+            transform: scale(1.03);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            background-color: #444;
+            /* Color de fondo temporal */
+        }
+
+        .gallery-item p {
+            padding: 15px;
+            margin: 0;
+            text-align: center;
+        }
+
+        .video-container {
+            margin: 40px 0;
+            text-align: center;
+        }
+
+        .video-container h2 {
+            color: #ff4500;
+            margin-bottom: 20px;
+        }
+
+        .video-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(560px, 1fr));
+            gap: 20px;
+        }
+
+        .video-wrapper {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+        }
+
+        .video-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        footer {
+            background-color: #000;
+            color: #aaa;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            border-top: 1px solid #ff4500;
+        }
+
+        @media (max-width: 768px) {
+            .gallery {
+                grid-template-columns: 1fr;
+            }
+
+            .video-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Mi Familia</h1>
+        <p>Bienvenidos a nuestro álbum familiar</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#galeria">Galería</a></li>
+            <li><a href="#videos">Videos</a></li>
+            <li><a href="#historia">Historia</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <section id="inicio" class="hero">
+            <div>
+                <h2>Nuestra Familia</h2>
+                <p>Compartiendo los momentos más especiales de nuestra vida juntos</p>
+            </div>
+        </section>
+
+        <section id="galeria">
+            <h2>Galería Familiar</h2>
+            <div class="gallery">
+                <!-- Espacio para foto familiar 1 -->
+                <div class="gallery-item">
+                    <img src="C:\Users\oscar coxic\Downloads\70802484-FDBB-4C67-B6E9-9BD9D663D702 (1).jpg"
+                        alt="Descripción de la foto familiar 1">
+                    <p>Título para la foto familiar 1</p>
+                </div>
+
+                <!-- Espacio para foto familiar 2 -->
+                <div class="gallery-item">
+                    <img src="C:\Users\oscar coxic\Downloads\IMG_1454.PNG" alt="Descripción de la foto familiar 2">
+                    <p>Título para la foto familiar 2</p>
+                </div>
+                <a href="videos.html" class="cta-button">ver videos</a>
+            </div>
+            <!-- Espacio para foto familiar 3 -->
+            <div class="gallery-item">
+                <img src="c:\Users\oscar coxic\Downloads\A5B8F388-24AF-4918-A067-C4A37D5A61B4.jpg"
+                    alt="Descripción de la foto familiar 3">
+                <p>Título para la foto familiar 3</p>
+            </div>
+
+            <!-- Espacio para foto familiar 4 -->
+            <div class="gallery-item">
+                <img src="RUTA_DE_TU_IMAGEN_4.jpg" alt="Descripción de la foto familiar 4">
+                <p>Título para la foto familiar 4</p>
+            </div>
+    </div>
+    </section>
+
+    <section id="videos" class="video-container">
+        <h2>Videos Familiares</h2>
+        <div class="video-grid">
+            <!-- Video 1 -->
+            <div class="video-item">
+                <div class="video-wrapper">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/CODIGO_DE_TU_VIDEO_1"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                <p>Descripción del video familiar 1</p>
+            </div>
+
+            <!-- Video 2 -->
+            <div class="video-item">
+                <div class="video-wrapper">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/CODIGO_DE_TU_VIDEO_2"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                <p>Descripción del video familiar 2</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="historia">
+
+    </section>
+
+    <section id="contacto">
+
+    </section>
+    </div>
+
+    <footer>
+        <p>&copy; coxic </p>
+    </footer>
+</body>
+
+</html>
